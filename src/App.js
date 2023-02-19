@@ -4,14 +4,17 @@ import { Outlet } from "react-router-dom";
 import { Provider } from "react-redux";
 import store from "./Redux/ReduxStore/Store";
 import Accordian from "./Components/Accordian/Accordian";
+import Drawer from "./Components/Drawer/Drawer";
 
 const App = () => {
   return (
     <>
       <Provider store={store}>
         <NavBar />
-        <Accordian />
-        <Outlet />
+
+        <Drawer />
+
+        {/* <Outlet /> */}
       </Provider>
     </>
   );

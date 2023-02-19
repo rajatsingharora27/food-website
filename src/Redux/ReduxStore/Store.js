@@ -1,9 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import cartSlice from "../Slices/cartSlice";
+
+import activeLinkSlice from "../Slices/activeComponet";
 
 const store = configureStore({
   reducer: {
-    cart: cartSlice,
+    active: activeLinkSlice,
   },
 });
 
