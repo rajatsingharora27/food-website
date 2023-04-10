@@ -10,7 +10,7 @@ const App = () => {
     <>
       <Provider store={store}>
         <NavBar />
-        <Accordian />
+        {/* <Accordian /> */}
         <Outlet />
       </Provider>
     </>
