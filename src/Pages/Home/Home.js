@@ -5,7 +5,7 @@ import "../../root.css";
 function Home() {
   return (
     <h1>
-      <h2>Home</h2>
+      <strong>Home</strong>
       <Carousel />
       {/* Heading - congifured according to the backend */}
 

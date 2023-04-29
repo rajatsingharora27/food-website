@@ -1,5 +1,7 @@
+import React, { useState } from "react";
+import { FreeMode, Navigation, Thumbs } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Parallax, Pagination, Navigation } from "swiper";
+import "../../root.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -7,91 +9,72 @@ import "swiper/css/navigation";
 // import "./styles.css";
 
 const Carousel = () => {
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
   return (
-    <>
-      <Swiper
-        className="mySwiper only:bg-[#eee] font-sans text-[14px] color:[#000] m-0 p-0"
-        style={{
-          "--swiper-navigation-color": "#fff",
-          "--swiper-pagination-color": "#fff",
-        }}
-        speed={600}
-        parallax={true}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Parallax, Pagination, Navigation]}
-      >
-        <div
-          slot="container-start"
-          className="parallax-bg"
-          style={{
-            "background-image":
-              "url(https://swiperjs.com/demos/images/nature-1.jpg)",
-          }}
-          data-swiper-parallax="-23%"
-        ></div>
-        <SwiperSlide>
-          <div className="title" data-swiper-parallax="-300">
-            Slide 1
-          </div>
-          <div className="subtitle" data-swiper-parallax="-200">
-            Subtitle
-          </div>
-          <div className="text" data-swiper-parallax="-100">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-              laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-              Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-              Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-              ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-              tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+    <Swiper
+      style={{
+        "--swiper-navigation-color": "black",
+        "--swiper-pagination-color": "#fff",
+        "background-image":
+          "url(https://cdn.shopify.com/s/files/1/0580/2668/8535/files/Banner-Weasbsite-20.jpg?v=1657226032)",
+        "background-size": "cover",
+        "background-position": "center",
+        height: "65vh",
+        width: "100%",
+        background: "blur(10px)",
+      }}
+      loop={true}
+      spaceBetween={10}
+      navigation={true}
+      thumbs={{ swiper: thumbsSwiper }}
+      modules={[FreeMode, Navigation, Thumbs]}
+      className="mySwiper2 h-[400px] bg-fixed "
+    >
+      <SwiperSlide className=" m-3">
+        <div className=" flex justify-center items-center gap-x-3">
+          <div>
+            <p className="font-sans text-[#C7B299]  text-5xl mb-4">
+              Get Fresh Cakes at door steps
             </p>
+            <button
+              className="middle none center rounded-lg bg-[var(--background-color)] py-3.5 px-12 font-sans text-sm font-semibold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+              data-ripple-light="true"
+            >
+              Shop Now
+            </button>
           </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="title" data-swiper-parallax="-300">
-            Slide 2
-          </div>
-          <div className="subtitle" data-swiper-parallax="-200">
-            Subtitle
-          </div>
-          <div className="text" data-swiper-parallax="-100">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-              laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-              Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-              Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-              ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-              tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+          <img
+            src="https://cdn.shopify.com/s/files/1/0580/2668/8535/files/banner-home.png?v=1679217256"
+            alt=""
+            className="w-96 rounded-2xl shadow-2xl h-96"
+          />
+        </div>
+      </SwiperSlide>
+
+      <SwiperSlide className=" m-3">
+        <div className=" flex justify-center items-center gap-x-3">
+          <div>
+            <p className="font-sans text-[#C7B299]  text-5xl mb-4">
+              Get Fresh Cakes at door steps
             </p>
+            <button
+              className="middle none center rounded-lg bg-[var(--background-color)] py-3.5 px-12 font-sans text-sm font-semibold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+              data-ripple-light="true"
+            >
+              Shop Now
+            </button>
           </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="title" data-swiper-parallax="-300">
-            Slide 3
-          </div>
-          <div className="subtitle" data-swiper-parallax="-200">
-            Subtitle
-          </div>
-          <div className="text" data-swiper-parallax="-100">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-              laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-              Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-              Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-              ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-              tincidunt ut libero. Aenean feugiat non eros quis feugiat.
-            </p>
-          </div>
-        </SwiperSlide>
-      </Swiper>
-    </>
+          <img
+            src="https://cdn.shopify.com/s/files/1/0580/2668/8535/files/Untiasatled-1.jpg?v=1659091752"
+            alt=""
+            className="w-96 rounded-2xl shadow-2xl h-96"
+          />
+        </div>
+      </SwiperSlide>
+    </Swiper>
   );
 };
 
 export default Carousel;
+
+// https://cdn.shopify.com/s/files/1/0580/2668/8535/files/Untiasatled-1.jpg?v=1659091752
