@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FaSearch, FaUserAlt, FaListUl, FaCartPlus } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { changeState } from "../../Redux/Slices/hamburgerMenuSlice";
 import "../../root.css";
 
 // import SearchComponent from "../SearchComponent";
@@ -15,6 +16,7 @@ const NavBar = () => {
 
   const handleNav = () => {
     setNav(!nav);
+    dispatch(changeState(nav));
   };
 
   return (

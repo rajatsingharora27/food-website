@@ -19,8 +19,8 @@ const Carousel = () => {
           "url(https://cdn.shopify.com/s/files/1/0580/2668/8535/files/Banner-Weasbsite-20.jpg?v=1657226032)",
         "background-size": "cover",
         "background-position": "center",
-        height: "75vh",
-        width: "100%",
+        height: "80vh",
+        width: "100vw",
         background: "blur(10px)",
       }}
       loop={true}

@@ -8,7 +8,7 @@ import Accordian from "./Components/Accordian/Accordian";
 const App = () => {
   return (
     <>
-      <Provider store={store}>
+      <Provider store={store} className="p-0 m-0">
         <NavBar />
         {/* <Accordian /> */}
         <Outlet />
