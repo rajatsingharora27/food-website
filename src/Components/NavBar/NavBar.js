@@ -21,7 +21,7 @@ const NavBar = () => {
 
   return (
     <>
-      <div className="w-auto shadow-md h-[60px] flex justify-between items-center text-white bg-[var(--background-color)] z-10 md:w-screen">
+      <div className="w-auto shadow-md h-[60px] flex justify-between items-center text-white bg-[var(--background-color)] z-10 px-7 md:w-screen">
         <Link to={"/home"}>
           <img
             src="/images/logo.png"
@@ -97,7 +97,7 @@ const NavBar = () => {
           onClick={handleNav}
           className={
             nav
-              ? "overflow-y-hidden lg:hidden ease-in duration-300 w-full absolute left-0 top-0 h-screen bg-[var(--background-color)] px-4 py-7 flex flex-col"
+              ? "overflow-y-hidden lg:hidden ease-in duration-300 w-full  absolute left-0 top-0 bottom-0 h-screen bg-[var(--background-color)] px-4 py-7 flex flex-col"
               : "absolute top-0 h-screen left-[-100%] ease-in duration-500"
           }
         >
