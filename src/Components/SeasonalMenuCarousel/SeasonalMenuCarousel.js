@@ -58,11 +58,11 @@ const SeasonalMenuCarousel = () => {
         // navigation
       >
         <SwiperSlide className="">
-          <div className="max-w-md p-6 rounded-md shadow-md dark:bg-gray-900 dark:text-gray-50">
+          <div className="max-w-md p-6 rounded-md shadow-md dark:bg-white dark:text-black">
             <img
               src="  https://cdn.shopify.com/s/files/1/0580/2668/8535/products/mangoassortedplatter.jpg?v=1679054665"
               alt=""
-              className="object-cover object-center w-full rounded-md h-72 dark:bg-gray-500"
+              className="object-cover object-center w-full rounded-md h-72 dark:bg-white dark:text-black"
             />
             <div className="mt-6 mb-2">
               <span className="block text-xs font-medium tracking-widest uppercase dark:text-violet-400">
@@ -72,19 +72,18 @@ const SeasonalMenuCarousel = () => {
                 Nam maximus purus
               </h2>
             </div>
-            <p className="dark:text-gray-100">
+            <p className="dark:bg-white dark:text-black">
               Mauris et lorem at elit tristique dignissim et ullamcorper elit.
               In sed feugiat mi. Etiam ut lacinia dui.
             </p>
           </div>
         </SwiperSlide>
-
         <SwiperSlide className="">
-          <div className="max-w-md p-6 rounded-md shadow-md dark:bg-gray-900 dark:text-gray-50">
+          <div className="max-w-md p-6 rounded-md shadow-md dark:bg-white dark:text-black">
             <img
               src="  https://cdn.shopify.com/s/files/1/0580/2668/8535/products/mangoassortedplatter.jpg?v=1679054665"
               alt=""
-              className="object-cover object-center w-full rounded-md h-72 dark:bg-gray-500"
+              className="object-cover object-center w-full rounded-md h-72 dark:bg-white dark:text-black"
             />
             <div className="mt-6 mb-2">
               <span className="block text-xs font-medium tracking-widest uppercase dark:text-violet-400">
@@ -94,19 +93,18 @@ const SeasonalMenuCarousel = () => {
                 Nam maximus purus
               </h2>
             </div>
-            <p className="dark:text-gray-100">
+            <p className="dark:bg-white dark:text-black">
               Mauris et lorem at elit tristique dignissim et ullamcorper elit.
               In sed feugiat mi. Etiam ut lacinia dui.
             </p>
           </div>
         </SwiperSlide>
-
         <SwiperSlide className="">
-          <div className="max-w-md p-6 rounded-md shadow-md dark:bg-gray-900 dark:text-gray-50">
+          <div className="max-w-md p-6 rounded-md shadow-md dark:bg-white dark:text-black">
             <img
               src="  https://cdn.shopify.com/s/files/1/0580/2668/8535/products/mangoassortedplatter.jpg?v=1679054665"
               alt=""
-              className="object-cover object-center w-full rounded-md h-72 dark:bg-gray-500"
+              className="object-cover object-center w-full rounded-md h-72 dark:bg-white dark:text-black"
             />
             <div className="mt-6 mb-2">
               <span className="block text-xs font-medium tracking-widest uppercase dark:text-violet-400">
@@ -116,19 +114,18 @@ const SeasonalMenuCarousel = () => {
                 Nam maximus purus
               </h2>
             </div>
-            <p className="dark:text-gray-100">
+            <p className="dark:bg-white dark:text-black">
               Mauris et lorem at elit tristique dignissim et ullamcorper elit.
               In sed feugiat mi. Etiam ut lacinia dui.
             </p>
           </div>
         </SwiperSlide>
-
         <SwiperSlide className="">
-          <div className="max-w-md p-6 rounded-md shadow-md dark:bg-gray-900 dark:text-gray-50">
+          <div className="max-w-md p-6 rounded-md shadow-md dark:bg-white dark:text-black">
             <img
               src="  https://cdn.shopify.com/s/files/1/0580/2668/8535/products/mangoassortedplatter.jpg?v=1679054665"
               alt=""
-              className="object-cover object-center w-full rounded-md h-72 dark:bg-gray-500"
+              className="object-cover object-center w-full rounded-md h-72 dark:bg-white dark:text-black"
             />
             <div className="mt-6 mb-2">
               <span className="block text-xs font-medium tracking-widest uppercase dark:text-violet-400">
@@ -138,19 +135,18 @@ const SeasonalMenuCarousel = () => {
                 Nam maximus purus
               </h2>
             </div>
-            <p className="dark:text-gray-100">
+            <p className="dark:bg-white dark:text-black">
               Mauris et lorem at elit tristique dignissim et ullamcorper elit.
               In sed feugiat mi. Etiam ut lacinia dui.
             </p>
           </div>
         </SwiperSlide>
-
         <SwiperSlide className="">
-          <div className="max-w-md p-6 rounded-md shadow-md dark:bg-gray-900 dark:text-gray-50">
+          <div className="max-w-md p-6 rounded-md shadow-md dark:bg-white dark:text-black">
             <img
               src="  https://cdn.shopify.com/s/files/1/0580/2668/8535/products/mangoassortedplatter.jpg?v=1679054665"
               alt=""
-              className="object-cover object-center w-full rounded-md h-72 dark:bg-gray-500"
+              className="object-cover object-center w-full rounded-md h-72 dark:bg-white dark:text-black"
             />
             <div className="mt-6 mb-2">
               <span className="block text-xs font-medium tracking-widest uppercase dark:text-violet-400">
@@ -160,19 +156,18 @@ const SeasonalMenuCarousel = () => {
                 Nam maximus purus
               </h2>
             </div>
-            <p className="dark:text-gray-100">
+            <p className="dark:bg-white dark:text-black">
               Mauris et lorem at elit tristique dignissim et ullamcorper elit.
               In sed feugiat mi. Etiam ut lacinia dui.
             </p>
           </div>
         </SwiperSlide>
-
         <SwiperSlide className="">
-          <div className="max-w-md p-6 rounded-md shadow-md dark:bg-gray-900 dark:text-gray-50">
+          <div className="max-w-md p-6 rounded-md shadow-md dark:bg-white dark:text-black">
             <img
               src="  https://cdn.shopify.com/s/files/1/0580/2668/8535/products/mangoassortedplatter.jpg?v=1679054665"
               alt=""
-              className="object-cover object-center w-full rounded-md h-72 dark:bg-gray-500"
+              className="object-cover object-center w-full rounded-md h-72 dark:bg-white dark:text-black"
             />
             <div className="mt-6 mb-2">
               <span className="block text-xs font-medium tracking-widest uppercase dark:text-violet-400">
@@ -182,7 +177,70 @@ const SeasonalMenuCarousel = () => {
                 Nam maximus purus
               </h2>
             </div>
-            <p className="dark:text-gray-100">
+            <p className="dark:bg-white dark:text-black">
+              Mauris et lorem at elit tristique dignissim et ullamcorper elit.
+              In sed feugiat mi. Etiam ut lacinia dui.
+            </p>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="">
+          <div className="max-w-md p-6 rounded-md shadow-md dark:bg-white dark:text-black">
+            <img
+              src="  https://cdn.shopify.com/s/files/1/0580/2668/8535/products/mangoassortedplatter.jpg?v=1679054665"
+              alt=""
+              className="object-cover object-center w-full rounded-md h-72 dark:bg-white dark:text-black"
+            />
+            <div className="mt-6 mb-2">
+              <span className="block text-xs font-medium tracking-widest uppercase dark:text-violet-400">
+                Quisque
+              </span>
+              <h2 className="text-xl font-semibold tracking-wide">
+                Nam maximus purus
+              </h2>
+            </div>
+            <p className="dark:bg-white dark:text-black">
+              Mauris et lorem at elit tristique dignissim et ullamcorper elit.
+              In sed feugiat mi. Etiam ut lacinia dui.
+            </p>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="">
+          <div className="max-w-md p-6 rounded-md shadow-md dark:bg-white dark:text-black">
+            <img
+              src="  https://cdn.shopify.com/s/files/1/0580/2668/8535/products/mangoassortedplatter.jpg?v=1679054665"
+              alt=""
+              className="object-cover object-center w-full rounded-md h-72 dark:bg-white dark:text-black"
+            />
+            <div className="mt-6 mb-2">
+              <span className="block text-xs font-medium tracking-widest uppercase dark:text-violet-400">
+                Quisque
+              </span>
+              <h2 className="text-xl font-semibold tracking-wide">
+                Nam maximus purus
+              </h2>
+            </div>
+            <p className="dark:bg-white dark:text-black">
+              Mauris et lorem at elit tristique dignissim et ullamcorper elit.
+              In sed feugiat mi. Etiam ut lacinia dui.
+            </p>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="">
+          <div className="max-w-md p-6 rounded-md shadow-md dark:bg-white dark:text-black">
+            <img
+              src="  https://cdn.shopify.com/s/files/1/0580/2668/8535/products/mangoassortedplatter.jpg?v=1679054665"
+              alt=""
+              className="object-cover object-center w-full rounded-md h-72 dark:bg-white dark:text-black"
+            />
+            <div className="mt-6 mb-2">
+              <span className="block text-xs font-medium tracking-widest uppercase dark:text-violet-400">
+                Quisque
+              </span>
+              <h2 className="text-xl font-semibold tracking-wide">
+                Nam maximus purus
+              </h2>
+            </div>
+            <p className="dark:bg-white dark:text-black">
               Mauris et lorem at elit tristique dignissim et ullamcorper elit.
               In sed feugiat mi. Etiam ut lacinia dui.
             </p>
