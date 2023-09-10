@@ -1,5 +1,6 @@
 import React from "react";
 import PageCard from "../../Components/PageCard/PageCard";
+import { CAKES } from "../../Utils/productMock";
 
 function Cakes() {
   return (
@@ -18,8 +19,8 @@ function Cakes() {
       </div>
       <div>FILTER BAR</div>
       <div className="flex flex-wrap justify-center items-center gap-y-3 gap-x-3">
-        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((cardDetail) => {
-          return <PageCard />;
+        {CAKES.map((cardDetail) => {
+          return <PageCard product={cardDetail} />;
         })}
       </div>
     </div>
