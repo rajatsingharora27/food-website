@@ -8,6 +8,7 @@ import GiftHamper from "../Pages/GiftHamper/GiftHamper";
 import Savory from "../Pages/Savory/Savory";
 import Pastory from "../Pages/Pastory/Pastory";
 import Contact from "../Pages/Contact/Contact";
+import Cart from "../Pages/Cart/Cart";
 
 const routerApp = createBrowserRouter([
   {
@@ -47,6 +48,10 @@ const routerApp = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/cart",
+        element: <Cart />,
       },
     ],
   },

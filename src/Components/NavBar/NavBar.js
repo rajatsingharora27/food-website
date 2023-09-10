@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaSearch, FaUserAlt, FaListUl, FaCartPlus } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { changeState } from "../../Redux/Slices/hamburgerMenuSlice";
 import "../../root.css";
 
@@ -11,6 +11,7 @@ const NavBar = () => {
   const [nav, setNav] = useState(false);
   const dispatch = useDispatch();
   const cartItems = useSelector((store) => store.cart.items);
+  const navigate = useNavigate();
 
   // const [search, setSearch] = useState(false);
 
@@ -74,7 +75,10 @@ const NavBar = () => {
         <div className="hidden lg:flex justify-between  ">
           <FaSearch className="mx-4 cursor-pointer" />
           <FaUserAlt className="mx-4 cursor-pointer" />
-          <FaCartPlus className="mx-4 cursor-pointer z-[1]" />
+          <FaCartPlus
+            className="mx-4 cursor-pointer z-[1]"
+            onClick={() => navigate("/cart")}
+          />
           {cartItems.length > 0 ? (
             <span className="absolute top-2 right-0 py-0 px-1 text-[var(--navBarHover-color)] rounded-full text-[13px] align-top ml-[-10px] bg-[#ff0000c1] ">
               {cartItems.length}

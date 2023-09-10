@@ -18,10 +18,10 @@ const Carousel = () => {
       style={{
         "--swiper-navigation-color": "black",
         "--swiper-pagination-color": "#fff",
-        "background-image":
+        backgroundImage:
           "url(https://cdn.shopify.com/s/files/1/0580/2668/8535/files/Banner-Weasbsite-20.jpg?v=1657226032)",
-        "background-size": "cover",
-        "background-position": "center",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
         height: "80vh",
         width: "100vw",
         zIndex: hamburgerVale ? -1 : 0,
