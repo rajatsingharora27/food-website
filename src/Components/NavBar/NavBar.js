@@ -48,7 +48,7 @@ const NavBar = () => {
               Cakes
             </li>
           </Link>
-          <Link to={"/gift-hamper"}>
+          {/* <Link to={"/gift-hamper"}>
             <li className="text-xl px-4 cursor-pointer hover:text-[var(--navBarHover-color)] hover:ease-in duration-100 ">
               Gift Hampers
             </li>
@@ -64,7 +64,7 @@ const NavBar = () => {
             <li className="text-xl px-4 cursor-pointer hover:text-[var(--navBarHover-color)] hover:ease-in duration-100 ">
               Pastory
             </li>
-          </Link>
+          </Link> */}
 
           <Link to={"/contact"}>
             <li className="text-xl px-4 cursor-pointer hover:text-[var(--navBarHover-color)] hover:ease-in duration-100">
