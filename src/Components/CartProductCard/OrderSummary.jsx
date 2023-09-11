@@ -4,23 +4,7 @@ import { useSelector } from "react-redux";
 
 const OrderSummary = () => {
   const cartPageItems = useSelector((state) => state.cart.cartPageItems);
-  const [orderTotal, setOrderTotal] = useState(0);
 
-  //   const getOrderTotal = () => {
-  //     let initailValue = orderTotal;
-  //     cartPageItems.reduce(
-  //       (acc, ele) => acc + ele.quantity * ele.price,
-  //       initailValue
-  //     );
-
-  //     setOrderTotal(initailValue);
-  //     console.log(orderTotal);
-  //     return initailValue;
-  //   };
-
-  //   useEffect(() => {
-  //     setOrderTotal();
-  //   }, [orderTotal]);
   return (
     <Card>
       <Typography className="border-b border-blue-gray-100 bg-blue-gray-50 p-4 text-2xl font-extrabold leading-none opacity-70">

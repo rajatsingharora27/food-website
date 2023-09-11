@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaSearch, FaUserAlt, FaListUl, FaCartPlus } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { changeState } from "../../Redux/Slices/hamburgerMenuSlice";
 import "../../root.css";
+import { updateTotalPrice } from "../../Redux/Slices/cartSlice";
 
 // import SearchComponent from "../SearchComponent";
 
@@ -12,13 +13,27 @@ const NavBar = () => {
   const dispatch = useDispatch();
   const cartItems = useSelector((store) => store.cart.items);
   const navigate = useNavigate();
-
-  // const [search, setSearch] = useState(false);
+  const cartPageItems = useSelector((state) => state.cart.cartPageItems);
 
   const handleNav = () => {
     setNav(!nav);
     dispatch(changeState(nav));
   };
+
+  const getLatestPrice = (cartItem) => {
+    let initialValue = 0;
+    cartItem.forEach((cartItem) => {
+      initialValue += cartItem.price * cartItem.quantity;
+    });
+
+    return initialValue;
+  };
+
+  useEffect(() => {
+    const val = getLatestPrice(cartPageItems);
+
+    dispatch(updateTotalPrice(val));
+  }, [cartPageItems]);
 
   return (
     <>
@@ -75,10 +90,18 @@ const NavBar = () => {
         <div className="hidden lg:flex justify-between  ">
           <FaSearch className="mx-4 cursor-pointer" />
           <FaUserAlt className="mx-4 cursor-pointer" />
-          <FaCartPlus
-            className="mx-4 cursor-pointer z-[1]"
+          <div
+            className="relative cursor-pointer"
             onClick={() => navigate("/cart")}
-          />
+          >
+            {cartPageItems.length > 0 && (
+              <div className="absolute top-0  right-0 rounded-xl bg-red-500 text-white font-semibold w-4 h-4 flex justify-center items-center">
+                <span>{cartPageItems.length}</span>
+              </div>
+            )}
+            <FaCartPlus className="mx-4  z-[1]" />
+          </div>
+
           {cartItems.length > 0 ? (
             <span className="absolute top-2 right-0 py-0 px-1 text-[var(--navBarHover-color)] rounded-full text-[13px] align-top ml-[-10px] bg-[#ff0000c1] ">
               {cartItems.length}

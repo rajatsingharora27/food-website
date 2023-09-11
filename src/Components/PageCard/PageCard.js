@@ -1,13 +1,22 @@
 import { Button } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { addItemToCart } from "../../Redux/Slices/cartSlice";
+import {
+  addItemToCart,
+  removeItemFromCart,
+} from "../../Redux/Slices/cartSlice";
 
 const PageCard = ({ product }) => {
   const dispatch = useDispatch();
+  const [addedToCart, setIsaddedtoCart] = useState(false);
   const updateCart = () => {
-    // console.log(product);
-    dispatch(addItemToCart(product));
+    if (!addedToCart) {
+      setIsaddedtoCart(true);
+      dispatch(addItemToCart(product));
+    } else {
+      setIsaddedtoCart(false);
+      dispatch(removeItemFromCart(product.id));
+    }
   };
   return (
     <div className="max-w-xs p-6 rounded-md shadow-md dark:bg-gray-900 dark:text-gray-50">
@@ -20,7 +29,9 @@ const PageCard = ({ product }) => {
         <h2 className="text-xl font-semibold tracking-wide">{product.name}</h2>
       </div>
       <p className="dark:text-gray-100">{product.tagline}</p>
-      <Button onClick={updateCart}>Add to Cart </Button>
+      <Button onClick={updateCart} variant="outlined">
+        {!addedToCart ? "Add to cart" : "Remove Item"}
+      </Button>
     </div>
   );
 };
