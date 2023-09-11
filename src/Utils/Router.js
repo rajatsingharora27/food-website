@@ -9,6 +9,7 @@ import Savory from "../Pages/Savory/Savory";
 import Pastory from "../Pages/Pastory/Pastory";
 import Contact from "../Pages/Contact/Contact";
 import Cart from "../Pages/Cart/Cart";
+import CustomerDetailPage from "../Pages/CustomerDetailPage/CustomerDetailPage";
 
 const routerApp = createBrowserRouter([
   {
@@ -52,6 +53,10 @@ const routerApp = createBrowserRouter([
       {
         path: "/cart",
         element: <Cart />,
+      },
+      {
+        path: "/customer-details",
+        element: <CustomerDetailPage />,
       },
     ],
   },

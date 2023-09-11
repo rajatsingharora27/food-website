@@ -14,6 +14,7 @@ const NavBar = () => {
   const cartItems = useSelector((store) => store.cart.items);
   const navigate = useNavigate();
   const cartPageItems = useSelector((state) => state.cart.cartPageItems);
+  const [cartQuantity, setCartQuantity] = useState();
 
   const handleNav = () => {
     setNav(!nav);
@@ -25,13 +26,11 @@ const NavBar = () => {
     cartItem.forEach((cartItem) => {
       initialValue += cartItem.price * cartItem.quantity;
     });
-
     return initialValue;
   };
 
   useEffect(() => {
     const val = getLatestPrice(cartPageItems);
-
     dispatch(updateTotalPrice(val));
   }, [cartPageItems]);
 
