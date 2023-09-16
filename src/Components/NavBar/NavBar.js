@@ -51,11 +51,11 @@ const NavBar = () => {
               Home
             </li>
           </Link>
-          <Link to={"/about"}>
+          {/* <Link to={"/about"}>
             <li className="text-xl px-4 cursor-pointer hover:text-[var(--navBarHover-color)] hover:ease-in duration-100 ">
               About Us
             </li>
-          </Link>
+          </Link> */}
 
           <Link to={"/cakes"}>
             <li className="text-xl px-4  cursor-pointer hover:text-[var(--navBarHover-color)] hover:ease-in duration-100">
@@ -80,11 +80,11 @@ const NavBar = () => {
             </li>
           </Link> */}
 
-          <Link to={"/contact"}>
+          {/* <Link to={"/contact"}>
             <li className="text-xl px-4 cursor-pointer hover:text-[var(--navBarHover-color)] hover:ease-in duration-100">
               Contact Us
             </li>
-          </Link>
+          </Link> */}
         </ul>
         <div className="hidden lg:flex justify-between  ">
           <FaSearch className="mx-4 cursor-pointer" />

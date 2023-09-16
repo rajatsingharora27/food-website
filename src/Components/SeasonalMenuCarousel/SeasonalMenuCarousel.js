@@ -7,6 +7,9 @@ import "swiper/swiper-bundle.min.css";
 // import "./styles.css";
 
 import { EffectCoverflow, Navigation, Pagination, Autoplay } from "swiper";
+import Product from "../MinorComponents/Product";
+import { Link } from "react-router-dom";
+import Image from "../MinorComponents/Image";
 
 const SeasonalMenuCarousel = () => {
   const [slidesPerView, setSlidesPerView] = useState(3);
@@ -40,7 +43,7 @@ const SeasonalMenuCarousel = () => {
         </p>
       </div>
 
-      <Swiper
+      {/* <Swiper
         slidesPerView={slidesPerView}
         spaceBetween={30}
         centeredSlides={true}
@@ -57,196 +60,57 @@ const SeasonalMenuCarousel = () => {
         className="mySwiper"
         // navigation
       >
-        <SwiperSlide className="">
-          <div className="max-w-md p-6 rounded-md shadow-md dark:bg-white dark:text-black">
-            <img
-              src="  https://cdn.shopify.com/s/files/1/0580/2668/8535/products/mangoassortedplatter.jpg?v=1679054665"
-              alt=""
-              className="object-cover object-center w-full rounded-md h-72 dark:bg-white dark:text-black"
+        <div className="flex justify-between gap-x-4 overflow-x-scroll">
+          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(() => {
+            return (
+              <Product
+                _id="1011"
+                img="https://cdn.shopify.com/s/files/1/0580/2668/8535/products/mangoassortedplatter.jpg?v=1679054665"
+                productName="Flower Base"
+                price="35.00"
+                color="Blank and White"
+                badge={false}
+                des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
+              />
+            );
+          })}
+        </div>
+      </Swiper> */}
+
+      {/* <div className="py-20 flex flex-col md:flex-row items-start justify-between gap-4 lg:gap-10 ">
+        <div className="w-full md:w-2/3 lg:w-1/2 ">
+          <Link to="/shop">
+            <Image
+              className="h-1/2 w-full object-cover"
+              imgSrc={
+                "https://cdn.shopify.com/s/files/1/0580/2668/8535/products/mangoassortedplatter.jpg?v=1679054665"
+              }
             />
-            <div className="mt-6 mb-2">
-              <span className="block text-xs font-medium tracking-widest uppercase dark:text-violet-400">
-                Quisque
-              </span>
-              <h2 className="text-xl font-semibold tracking-wide">
-                Nam maximus purus
-              </h2>
-            </div>
-            <p className="dark:bg-white dark:text-black">
-              Mauris et lorem at elit tristique dignissim et ullamcorper elit.
-              In sed feugiat mi. Etiam ut lacinia dui.
-            </p>
+          </Link>
+        </div>
+        <div className="w-full md:w-2/3 lg:w-1/2 flex flex-col ">
+          <div className=" w-full">
+            <Link to="/shop">
+              <Image
+                className="h-1/2 w-full object-cover"
+                imgSrc={
+                  "https://cdn.shopify.com/s/files/1/0580/2668/8535/products/mangoassortedplatter.jpg?v=1679054665"
+                }
+              />
+            </Link>
           </div>
-        </SwiperSlide>
-        <SwiperSlide className="">
-          <div className="max-w-md p-6 rounded-md shadow-md dark:bg-white dark:text-black">
-            <img
-              src="  https://cdn.shopify.com/s/files/1/0580/2668/8535/products/mangoassortedplatter.jpg?v=1679054665"
-              alt=""
-              className="object-cover object-center w-full rounded-md h-72 dark:bg-white dark:text-black"
-            />
-            <div className="mt-6 mb-2">
-              <span className="block text-xs font-medium tracking-widest uppercase dark:text-violet-400">
-                Quisque
-              </span>
-              <h2 className="text-xl font-semibold tracking-wide">
-                Nam maximus purus
-              </h2>
-            </div>
-            <p className="dark:bg-white dark:text-black">
-              Mauris et lorem at elit tristique dignissim et ullamcorper elit.
-              In sed feugiat mi. Etiam ut lacinia dui.
-            </p>
+          <div className=" w-full">
+            <Link to="/shop">
+              <Image
+                className="h-1/2 w-full object-cover"
+                imgSrc={
+                  "https://cdn.shopify.com/s/files/1/0580/2668/8535/products/mangoassortedplatter.jpg?v=1679054665"
+                }
+              />
+            </Link>
           </div>
-        </SwiperSlide>
-        <SwiperSlide className="">
-          <div className="max-w-md p-6 rounded-md shadow-md dark:bg-white dark:text-black">
-            <img
-              src="  https://cdn.shopify.com/s/files/1/0580/2668/8535/products/mangoassortedplatter.jpg?v=1679054665"
-              alt=""
-              className="object-cover object-center w-full rounded-md h-72 dark:bg-white dark:text-black"
-            />
-            <div className="mt-6 mb-2">
-              <span className="block text-xs font-medium tracking-widest uppercase dark:text-violet-400">
-                Quisque
-              </span>
-              <h2 className="text-xl font-semibold tracking-wide">
-                Nam maximus purus
-              </h2>
-            </div>
-            <p className="dark:bg-white dark:text-black">
-              Mauris et lorem at elit tristique dignissim et ullamcorper elit.
-              In sed feugiat mi. Etiam ut lacinia dui.
-            </p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="">
-          <div className="max-w-md p-6 rounded-md shadow-md dark:bg-white dark:text-black">
-            <img
-              src="  https://cdn.shopify.com/s/files/1/0580/2668/8535/products/mangoassortedplatter.jpg?v=1679054665"
-              alt=""
-              className="object-cover object-center w-full rounded-md h-72 dark:bg-white dark:text-black"
-            />
-            <div className="mt-6 mb-2">
-              <span className="block text-xs font-medium tracking-widest uppercase dark:text-violet-400">
-                Quisque
-              </span>
-              <h2 className="text-xl font-semibold tracking-wide">
-                Nam maximus purus
-              </h2>
-            </div>
-            <p className="dark:bg-white dark:text-black">
-              Mauris et lorem at elit tristique dignissim et ullamcorper elit.
-              In sed feugiat mi. Etiam ut lacinia dui.
-            </p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="">
-          <div className="max-w-md p-6 rounded-md shadow-md dark:bg-white dark:text-black">
-            <img
-              src="  https://cdn.shopify.com/s/files/1/0580/2668/8535/products/mangoassortedplatter.jpg?v=1679054665"
-              alt=""
-              className="object-cover object-center w-full rounded-md h-72 dark:bg-white dark:text-black"
-            />
-            <div className="mt-6 mb-2">
-              <span className="block text-xs font-medium tracking-widest uppercase dark:text-violet-400">
-                Quisque
-              </span>
-              <h2 className="text-xl font-semibold tracking-wide">
-                Nam maximus purus
-              </h2>
-            </div>
-            <p className="dark:bg-white dark:text-black">
-              Mauris et lorem at elit tristique dignissim et ullamcorper elit.
-              In sed feugiat mi. Etiam ut lacinia dui.
-            </p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="">
-          <div className="max-w-md p-6 rounded-md shadow-md dark:bg-white dark:text-black">
-            <img
-              src="  https://cdn.shopify.com/s/files/1/0580/2668/8535/products/mangoassortedplatter.jpg?v=1679054665"
-              alt=""
-              className="object-cover object-center w-full rounded-md h-72 dark:bg-white dark:text-black"
-            />
-            <div className="mt-6 mb-2">
-              <span className="block text-xs font-medium tracking-widest uppercase dark:text-violet-400">
-                Quisque
-              </span>
-              <h2 className="text-xl font-semibold tracking-wide">
-                Nam maximus purus
-              </h2>
-            </div>
-            <p className="dark:bg-white dark:text-black">
-              Mauris et lorem at elit tristique dignissim et ullamcorper elit.
-              In sed feugiat mi. Etiam ut lacinia dui.
-            </p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="">
-          <div className="max-w-md p-6 rounded-md shadow-md dark:bg-white dark:text-black">
-            <img
-              src="  https://cdn.shopify.com/s/files/1/0580/2668/8535/products/mangoassortedplatter.jpg?v=1679054665"
-              alt=""
-              className="object-cover object-center w-full rounded-md h-72 dark:bg-white dark:text-black"
-            />
-            <div className="mt-6 mb-2">
-              <span className="block text-xs font-medium tracking-widest uppercase dark:text-violet-400">
-                Quisque
-              </span>
-              <h2 className="text-xl font-semibold tracking-wide">
-                Nam maximus purus
-              </h2>
-            </div>
-            <p className="dark:bg-white dark:text-black">
-              Mauris et lorem at elit tristique dignissim et ullamcorper elit.
-              In sed feugiat mi. Etiam ut lacinia dui.
-            </p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="">
-          <div className="max-w-md p-6 rounded-md shadow-md dark:bg-white dark:text-black">
-            <img
-              src="  https://cdn.shopify.com/s/files/1/0580/2668/8535/products/mangoassortedplatter.jpg?v=1679054665"
-              alt=""
-              className="object-cover object-center w-full rounded-md h-72 dark:bg-white dark:text-black"
-            />
-            <div className="mt-6 mb-2">
-              <span className="block text-xs font-medium tracking-widest uppercase dark:text-violet-400">
-                Quisque
-              </span>
-              <h2 className="text-xl font-semibold tracking-wide">
-                Nam maximus purus
-              </h2>
-            </div>
-            <p className="dark:bg-white dark:text-black">
-              Mauris et lorem at elit tristique dignissim et ullamcorper elit.
-              In sed feugiat mi. Etiam ut lacinia dui.
-            </p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="">
-          <div className="max-w-md p-6 rounded-md shadow-md dark:bg-white dark:text-black">
-            <img
-              src="  https://cdn.shopify.com/s/files/1/0580/2668/8535/products/mangoassortedplatter.jpg?v=1679054665"
-              alt=""
-              className="object-cover object-center w-full rounded-md h-72 dark:bg-white dark:text-black"
-            />
-            <div className="mt-6 mb-2">
-              <span className="block text-xs font-medium tracking-widest uppercase dark:text-violet-400">
-                Quisque
-              </span>
-              <h2 className="text-xl font-semibold tracking-wide">
-                Nam maximus purus
-              </h2>
-            </div>
-            <p className="dark:bg-white dark:text-black">
-              Mauris et lorem at elit tristique dignissim et ullamcorper elit.
-              In sed feugiat mi. Etiam ut lacinia dui.
-            </p>
-          </div>
-        </SwiperSlide>
-      </Swiper>
+        </div>
+      </div> */}
     </>
   );
 };

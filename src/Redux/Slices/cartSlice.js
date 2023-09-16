@@ -26,16 +26,13 @@ const cartSlice = createSlice({
     //Cart Page action functions
     removeItemFromCartPage: (state, action) => {
       const { index, value } = action.payload;
-
-      if (value === 0) {
-        state.cartPageItems = state.cartPageItems.filter((item) => {
-          if (item.quantity > 0) {
-            return item;
-          }
-        });
-      }
-      if (value > 0) {
+      console.log(value);
+      if (value - 1 > 0) {
         state.cartPageItems[index].quantity = value - 1;
+      } else {
+        state.cartPageItems.map((ele) => {
+          console.log(ele);
+        });
       }
     },
     increaeItemFromCartPage: (state, action) => {

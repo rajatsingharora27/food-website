@@ -10,6 +10,7 @@ import Pastory from "../Pages/Pastory/Pastory";
 import Contact from "../Pages/Contact/Contact";
 import Cart from "../Pages/Cart/Cart";
 import CustomerDetailPage from "../Pages/CustomerDetailPage/CustomerDetailPage";
+import ProductPage from "../Pages/ProductPage/ProductPage";
 
 const routerApp = createBrowserRouter([
   {
@@ -57,6 +58,10 @@ const routerApp = createBrowserRouter([
       {
         path: "/customer-details",
         element: <CustomerDetailPage />,
+      },
+      {
+        path: "/product/:id",
+        element: <ProductPage />,
       },
     ],
   },
